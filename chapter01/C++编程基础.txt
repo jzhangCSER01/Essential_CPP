@@ -1,0 +1,26 @@
+关于如何使用 visual studio code 调试C/C++，可参考文章https://blog.csdn.net/weixin_48468423/article/details/118950592?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_aa&utm_relevant_index=2
+
+p205 附录A
+p255 附录B
+
+01  什么是class?
+    所谓类（class），是用户自定义的数据类型（user-defined data type），增强程序内之类型抽象化层次。
+    class定义分为两部分：
+    1、头文件（header file）——用来声明该class所提供的各种操作行为（operation）
+    2、代码文件（program text）——包含了这些操作行为的实现内容（implementation）
+02  什么是命名空间namespace?
+    所谓命名空间（namespace）是一种将库名称封装起来的方法。通过这种方法，可以避免和应用程序发生命名冲突的问题。
+    （所谓命名冲突是指在应用程序内两个不同的实体[entity]具有相同名称，导致程序无法区分两者）
+03  对象初始化方式?
+    1、使用 = 运算符（源自C语言，如 int num_tries = 0;）
+    2、构造函数语法（int num_tries(0);）
+        解决“多值初始化”问题
+        使内置类型与class类型的初始化方式得到统一
+04  逻辑运算符  
+    1、OR 逻辑运算符（||）
+    只需左右两个表达式中的一个为 true，OR 逻辑运算符的求值结果便为 true。
+    左侧表达式会先被求值，如果其值为 true，剩下另一个表达式就不需要再被求值（此所谓短路求值法）。
+    2、AND 逻辑运算符（&&）
+    在左右两个表达式的结果皆为 true 时，其求值结果方为 true。
+    3、NOT 逻辑运算符（!）
+    如果有一个表达式的运算结果为 false，那么将 NOT 逻辑运算符用于其上，结果为 true。
